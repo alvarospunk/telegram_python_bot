@@ -1,5 +1,11 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
+id_julian = 11949838
+id_killo = 66428972
+id_alvarospunk = 11644706
+id_arubeto = 256150411
+id_luli = 172812686
+
 def hello(bot, update):
     update.message.reply_text(
         'Hello {}'.format(update.message.from_user.first_name))
