@@ -9,7 +9,7 @@ id_javi = 1283123
 id_hola = 12381238
 
 def start(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
+    bot.send_message(chat_id=id_alvarospunk, text="Hola alvarito")
 
 updater = Updater('462567247:AAEs76XLVZZeTesKJBShttI-XQASUic8yVU')
 
