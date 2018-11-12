@@ -24,6 +24,7 @@ updater = Updater('462567247:AAEs76XLVZZeTesKJBShttI-XQASUic8yVU')
 updater.dispatcher.add_handler(CommandHandler('hello', hello))
 updater.dispatcher.add_handler(CommandHandler('start', start))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, echo))
+updater.dispatcher.add_handler(MessageHandler(Filters.text, answer))
 
 updater.start_polling()
 updater.idle()
