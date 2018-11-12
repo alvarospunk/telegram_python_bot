@@ -17,13 +17,12 @@ def echo(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text=update.message.text)
 
 def answer(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text="No contesto a tonterías")
+    bot.send_message(chat_id=update.message.chat_id, text="No contesto a tonterias")
 
 updater = Updater('462567247:AAEs76XLVZZeTesKJBShttI-XQASUic8yVU')
 
 updater.dispatcher.add_handler(CommandHandler('hello', hello))
 updater.dispatcher.add_handler(CommandHandler('start', start))
-updater.dispatcher.add_handler(MessageHandler(Filters.text, echo))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, answer))
 
 updater.start_polling()
