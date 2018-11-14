@@ -1,5 +1,7 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
+csv = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTDOxVghsVJHNekUk0YQ-2hlC3-VBWq8eCIFTAsST6_3f7bwG7ZjRzb26crm8fw_6L9ypGwN1_B6QfV/pub?output=csv"
+
 id_julian = 11949838
 id_killo = 66428972
 id_alvarospunk = 11644706
@@ -27,3 +29,4 @@ updater.dispatcher.add_handler(MessageHandler(Filters.text, answer))
 
 updater.start_polling()
 updater.idle()
+
