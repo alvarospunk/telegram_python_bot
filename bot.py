@@ -18,6 +18,12 @@ def echo(bot, update):
 
 def answer(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text="No contesto a tonterias")
+    
+def sumate(bot, update):
+    bot.send_message(chat_id=update.message.chat_id, text=update.)
+    
+def multiply(bot, update)
+    bot.send_message(chat_id=update.message.chat_id, text=update.)
 
 updater = Updater('462567247:AAEs76XLVZZeTesKJBShttI-XQASUic8yVU')
 
