@@ -5,6 +5,7 @@ id_killo = 66428972
 id_alvarospunk = 11644706
 id_arubeto = 256150411
 id_luli = 172812686
+id_federico = 1723912389
 
 def hello(bot, update):
     update.message.reply_text(
