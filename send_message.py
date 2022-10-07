@@ -1,17 +1,10 @@
+import os
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-
-id_julian = 11949838
-id_killo = 66428972
-id_alvarospunk = 11644706
-id_arubeto = 256150411
-id_luli = 172812686
-id_javi = 1283123
-id_hola = 1238123102
 
 def start(bot, update):
     bot.send_message(chat_id=id_alvarospunk, text="Hola alvarito")
 
-updater = Updater('462567247:AAEs76XLVZZeTesKJBShttI-XQASUic8yVU')
+updater = Updater(os.environ['TELEGRAM_BOT_TOKEN'])
 
 start
 updater.start_polling()
